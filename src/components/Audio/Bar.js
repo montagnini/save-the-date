@@ -56,3 +56,4 @@ export default function Bar(props) {
     </div>
   );
 }
+© 2021 GitHub, Inc.
