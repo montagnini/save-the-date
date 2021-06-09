@@ -1,30 +1,34 @@
-import React, { Component } from "react";
-import yourlove from './yourlove.mp3';
+import React from "react";
 
-export default class extends Component {
-  playAudio() {
-    const audioEl = document.getElementsByClassName("audio-element")[0];
-    audioEl.play();
-  }
+import Play from "./Play";
+import Pause from "./Pause";
+import YourLove from './yourlove.mp3';
 
-  stopAudio(){
-      const audioEl = document.getElementsByClassName("audio-element")[0];
-      audioEl.pause();
-  }
+import useAudioPlayer from './useAudioPlayer';
 
-  render() {
-    return (
-      <div>
-        <button onClick={this.playAudio}>
-          <span>Play Audio</span>
-        </button>
-        <button onClick={this.stopAudio}>
-          <span>Stop Audio</span>
-        </button>
-        <audio className="audio-element">
-          <source src={yourlove}></source>
-        </audio>
+import './styles.scss';
+
+function Audio() {
+  const {playing, setPlaying} = useAudioPlayer();
+
+  return (
+    <div className="player">
+      <audio id="audio">
+        <source src={YourLove} />
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+      <div className="controls">
+        {playing ? 
+          <Pause handleClick={() => setPlaying(false)} /> :
+          <Play handleClick={() => setPlaying(true)} />
+        }
       </div>
-    );
-  }
+    </div>
+  );
 }
+
+export default Audio;
+
+
+
+
