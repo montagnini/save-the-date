@@ -68,8 +68,9 @@ function App() {
                 minha esposa, parceira, amiga e minha player2?
                 <br />
                 <br />
-                obs: desculpa pelo texto, cê sabe que sou péssimo nisso, mas escrevo isso
-                com os olhos em lágrimas enquanto você dorme no quarto ao lado.
+                obs: desculpa pela redação não tão bem escrita rsrs, cê sabe que sou péssimo nisso, mas escrevo isso
+                com os olhos em lágrimas (de felicidade, juro) enquanto você dorme no quarto ao lado e eu lembro de 
+                nossos momentos juntos.
                 <br />
                 Amo tu, tatu! ❤
               </p>
