@@ -24,17 +24,21 @@ function App() {
       <footer className="Footer">
         <div className="footer_2">
           <div className="Insta">
-            <a href="https://www.instagram.com/naylapallu/" alt="n">
-              <FaInstagram></FaInstagram>
-              <div>Nayla</div>
-            </a>
+            <div style={{ marginRight: "5%" }}>
+              <a href="https://www.instagram.com/naylapallu/" alt="n">
+                <FaInstagram size={56}></FaInstagram>
+                <div>Nayla</div>
+              </a>
+            </div>
+            <div style={{ marginLeft: "15%" }}>
+              <a href="https://www.instagram.com/wmontagnin/" alt="n">
+                <FaInstagram size={56}></FaInstagram>
+                <div>Wellington</div>
+              </a>
+            </div>
           </div>
-          
-          <div className="Insta">
-            <a href="https://www.instagram.com/wmontagnin/" alt="n">
-              <FaInstagram></FaInstagram>
-              <div>Wellington</div>
-            </a>
+          <div>
+            <Audio></Audio>
           </div>
         </div>
       </footer>

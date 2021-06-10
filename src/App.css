@@ -55,7 +55,6 @@ body {
 }
 
 .Footer {
-  
   position: absolute;
   align-items: center;
   bottom: 0;
@@ -82,6 +81,7 @@ body {
   height: 200px;
   padding: 5px;
   margin: 5px;
+  display: flex;
 }
 
 header,
