@@ -19,7 +19,7 @@ function App() {
         </div>
       </header>
       <main className="Body">
-        
+        <Deck></Deck>
       </main>
       <footer className="Footer">
         <div className="footer_2">
@@ -29,9 +29,7 @@ function App() {
               <div>Nayla</div>
             </a>
           </div>
-          <div style={{ marginBotton: "30px" }}>
-            <Audio></Audio>
-          </div>
+          
           <div className="Insta">
             <a href="https://www.instagram.com/wmontagnin/" alt="n">
               <FaInstagram></FaInstagram>
