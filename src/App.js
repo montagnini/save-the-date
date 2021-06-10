@@ -19,7 +19,7 @@ function App() {
         </div>
       </header>
       <main className="Body">
-        <Deck></Deck>
+        
       </main>
       <footer className="Footer">
         <div className="footer_2">
