@@ -82,13 +82,15 @@ function App() {
         <div className="footer_2">
           <div className="Insta">
             <div style={{ marginRight: "5%" }}>
-              <a href="https://www.instagram.com/naylapallu/" alt="n">
+              <a href="https://www.instagram.com/naylapallu/" alt="n"
+              className='anchor'>
                 <FaInstagram size={56}></FaInstagram>
                 <div>Nayla</div>
               </a>
             </div>
             <div style={{ marginLeft: "15%" }}>
-              <a href="https://www.instagram.com/wmontagnin/" alt="n">
+              <a href="https://www.instagram.com/wmontagnin/" alt="n" 
+              className='anchor'>
                 <FaInstagram size={56}></FaInstagram>
                 <div>Wellington</div>
               </a>
