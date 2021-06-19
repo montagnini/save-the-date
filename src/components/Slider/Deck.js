@@ -13,7 +13,7 @@ const Deck = () => (
     animationType="fadeout"
     infinite
     touchTracking
-    controlsStrategy="alternate"
+    disableButtonsControls
     items={SliderData}
   />
 );

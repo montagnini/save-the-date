@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+
 import foto1 from "../../Images/1.jpg";
 import foto2 from "../../Images/2.jpg";
 import foto3 from "../../Images/3.jpg";
@@ -16,24 +18,32 @@ import foto15 from "../../Images/15.jpg";
 import foto16 from "../../Images/16.jpg";
 import foto17 from "../../Images/17.jpg";
 
+const Img = styled.img `
+  max-height: 60vh;
+
+  @media(max-width: 600px) {
+    max-width: 100vw;
+  }
+`
+
 const SliderData  = [
-    <img src={foto1} alt="img1" style={{ maxHeight: '60vh' }} />,
-    <img src={foto2} alt="img2" style={{ maxHeight: '60vh' }} />,
-    <img src={foto3} alt="img3" style={{ maxHeight: '60vh' }} />,
-    <img src={foto4} alt="img4" style={{ maxHeight: '60vh' }} />,
-    <img src={foto5} alt="img5" style={{ maxHeight: '60vh' }} />,
-    <img src={foto6} alt="img6" style={{ maxHeight: '60vh' }} />,
-    <img src={foto7} alt="img7" style={{ maxHeight: '60vh' }} />,
-    <img src={foto8} alt="img8" style={{ maxHeight: '60vh' }} />,
-    <img src={foto9} alt="img9" style={{ maxHeight: '60vh' }} />,
-    <img src={foto10} alt="img10" style={{ maxHeight: '60vh' }} />,
-    <img src={foto11} alt="img11" style={{ maxHeight: '60vh' }} />,
-    <img src={foto12} alt="img12" style={{ maxHeight: '60vh' }} />,
-    <img src={foto13} alt="img13" style={{ maxHeight: '60vh' }} />,
-    <img src={foto14} alt="img14" style={{ maxHeight: '60vh' }} />,
-    <img src={foto15} alt="img15" style={{ maxHeight: '60vh' }} />,
-    <img src={foto16} alt="img16" style={{ maxHeight: '60vh' }} />,
-    <img src={foto17} alt="img17" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto1} alt="img1"/>,
+    <Img src={foto2} alt="img2" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto3} alt="img3" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto4} alt="img4" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto5} alt="img5" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto6} alt="img6" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto7} alt="img7" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto8} alt="img8" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto9} alt="img9" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto10} alt="img10" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto11} alt="img11" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto12} alt="img12" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto13} alt="img13" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto14} alt="img14" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto15} alt="img15" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto16} alt="img16" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto17} alt="img17" style={{ maxHeight: '60vh' }} />,
   ];
 
 export default SliderData;

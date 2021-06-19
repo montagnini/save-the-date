@@ -126,3 +126,28 @@ a:active {
     height: 69vh;
   }
 }
+
+@media (max-height: 700px){
+  
+  .footer_2{
+    margin-top: -3%;
+  }
+}
+
+@media(max-height: 500px){
+  .Body{
+    margin-top: 6%;
+  }
+
+  .Insta{
+    margin: 5% 5% 15% 5%;
+  }
+
+  .Footer{
+    height: 17vh;
+  }
+
+  .footer_2{
+    margin-top: -7%;
+  }
+}

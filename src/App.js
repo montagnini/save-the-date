@@ -11,17 +11,19 @@ function App() {
   return (
     <div>
       <Router>
-      <header className="header">
-        <div className="header_left">
-          <Link to="/easterEgg">
-            <img src={Hands} alt="Hands" />
-          </Link>
-        </div>
-        <div className="header_center">
-          <h2>Save the date!</h2>
-          <Countdown date="August 28, 2021 18:30:00 GMT+03:00" />
-        </div>
-      </header>
+        <header className="header">
+          <div className="header_left">
+            <Link to="/easterEgg">
+              <img src={Hands} alt="Hands" />
+            </Link>
+          </div>
+          <div className="header_center">
+            <Link  to="/" style={{color: '#808e95'}}> 
+              <h2>Save the date!</h2>
+              <Countdown date="August 28, 2021 18:30:00 GMT+03:00" />
+            </Link>
+          </div>
+        </header>
         <Switch>
           <Route exact path="/">
             <main className="Body">
@@ -31,7 +33,14 @@ function App() {
           <Route exact path="/easterEgg">
             <div className="easterEgg">
               <h2>Nayla Christine Marcatti Pallú</h2>
-              <p style={{ fontSize: "20px", marginLeft:'55px', marginRight: '55px' }} align="justify">
+              <p
+                style={{
+                  fontSize: "20px",
+                  marginLeft: "55px",
+                  marginRight: "55px",
+                }}
+                align="justify"
+              >
                 Amor da minha vida, daqui até a eternidade!
                 <br />
                 Meu amor, eu lembro desde o primeiro dia que eu te vi, eu todo
@@ -68,9 +77,10 @@ function App() {
                 minha esposa, parceira, amiga e minha player2?
                 <br />
                 <br />
-                obs: desculpa pela redação não tão bem escrita rsrs, cê sabe que sou péssimo nisso, mas escrevo isso
-                com os olhos em lágrimas (de felicidade, juro) enquanto você dorme no quarto ao lado e eu lembro de 
-                nossos momentos juntos.
+                obs: desculpa pela redação não tão bem escrita rsrs, cê sabe que
+                sou péssimo nisso, mas escrevo isso com os olhos em lágrimas (de
+                felicidade, juro) enquanto você dorme no quarto ao lado e eu
+                lembro de nossos momentos juntos.
                 <br />
                 Amo tu, tatu! ❤
               </p>
@@ -82,15 +92,21 @@ function App() {
         <div className="footer_2">
           <div className="Insta">
             <div style={{ marginRight: "5%" }}>
-              <a href="https://www.instagram.com/naylapallu/" alt="n"
-              className='anchor'>
+              <a
+                href="https://www.instagram.com/naylapallu/"
+                alt="n"
+                className="anchor"
+              >
                 <FaInstagram size={56}></FaInstagram>
                 <div>Nayla</div>
               </a>
             </div>
             <div style={{ marginLeft: "15%" }}>
-              <a href="https://www.instagram.com/wmontagnin/" alt="n" 
-              className='anchor'>
+              <a
+                href="https://www.instagram.com/wmontagnin/"
+                alt="n"
+                className="anchor"
+              >
                 <FaInstagram size={56}></FaInstagram>
                 <div>Wellington</div>
               </a>
