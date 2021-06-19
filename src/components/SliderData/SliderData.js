@@ -17,6 +17,16 @@ import foto14 from "../../Images/14.jpg";
 import foto15 from "../../Images/15.jpg";
 import foto16 from "../../Images/16.jpg";
 import foto17 from "../../Images/17.jpg";
+import foto18 from "../../Images/18.jpg";
+import foto19 from "../../Images/19.jpg";
+import foto20 from "../../Images/20.jpg";
+import foto21 from "../../Images/21.jpg";
+import foto22 from "../../Images/22.jpg";
+import foto23 from "../../Images/23.jpg";
+import foto24 from "../../Images/24.jpg";
+import foto25 from "../../Images/25.jpg";
+import foto26 from "../../Images/26.jpg";
+import foto27 from "../../Images/27.jpg";
 
 const Img = styled.img `
   max-height: 60vh;
@@ -44,6 +54,16 @@ const SliderData  = [
     <Img src={foto15} alt="img15" style={{ maxHeight: '60vh' }} />,
     <Img src={foto16} alt="img16" style={{ maxHeight: '60vh' }} />,
     <Img src={foto17} alt="img17" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto18} alt="img18" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto19} alt="img19" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto20} alt="img20" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto21} alt="img21" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto22} alt="img22" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto23} alt="img23" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto24} alt="img24" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto25} alt="img25" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto26} alt="img26" style={{ maxHeight: '60vh' }} />,
+    <Img src={foto27} alt="img27" style={{ maxHeight: '60vh' }} />,
   ];
 
 export default SliderData;
