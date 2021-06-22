@@ -96,6 +96,7 @@ function App() {
                 href="https://www.instagram.com/naylapallu/"
                 alt="n"
                 className="anchor"
+				target="_blank"
               >
                 <FaInstagram size={56}></FaInstagram>
                 <div>Nayla</div>
@@ -106,6 +107,7 @@ function App() {
                 href="https://www.instagram.com/wmontagnin/"
                 alt="n"
                 className="anchor"
+				target="_blank"
               >
                 <FaInstagram size={56}></FaInstagram>
                 <div>Wellington</div>
