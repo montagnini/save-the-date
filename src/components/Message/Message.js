@@ -12,7 +12,7 @@ export function Message(){
                   type="text"
                   placeholder=""
                   draggable='false'
-                  resizable='false'                  >
+                  resizable='false'>
                     {value}
                       </textarea>
                   <button type="submit">

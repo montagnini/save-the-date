@@ -1,13 +1,36 @@
+  
 import React from "react";
-import Carousel from "react-material-ui-carousel";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
-import SliderData from "../SliderData/SliderData";
+import {sliderFotos} from "../SliderData/SliderData";
+import styled from 'styled-components';
 
-export const Slider = (props) => {
+
+const Img = styled.img `
+  max-height: 60vh;
+
+  @media(max-width: 600px) {
+    max-width: 100vw;
+  }
+`
+
+export const Slider = () => {
+  let itemArray = [];
+sliderFotos.map((el) => {
+  itemArray.push(<Img src={el} alt='fotoaqui'/>)
+  
+})
   return (
-    <Carousel navButtonsAlwaysVisible
-    stopAutoPlayOnHover>
-      {SliderData}
-    </Carousel>
+    <AliceCarousel 
+    autoPlay
+    autoPlayStrategy="none"
+    autoPlayInterval={4000}
+    animationDuration={1000}
+    infinite
+    touchTracking
+    disableButtonsControls={false}
+    mouseTracking
+    items={itemArray}/> 
   );
 };
