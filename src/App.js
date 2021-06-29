@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import { FaInstagram } from "react-icons/fa";
 import Deck from "./components/Slider/Deck";
+import {Message} from "./components/Message/Message";
 
 function App() {
   return (
@@ -86,6 +87,9 @@ function App() {
               </p>
             </div>
           </Route>
+          <Router exact path="/messages">
+                  <Message></Message>
+          </Router>
         </Switch>
       </Router>
       <footer className="Footer">
