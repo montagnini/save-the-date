@@ -5,7 +5,8 @@ import SliderData from "../SliderData/SliderData";
 
 export const Slider = (props) => {
   return (
-    <Carousel navButtonsAlwaysVisible animation="slide" stopAutoPlayOnHover>
+    <Carousel navButtonsAlwaysVisible
+    stopAutoPlayOnHover>
       {SliderData}
     </Carousel>
   );

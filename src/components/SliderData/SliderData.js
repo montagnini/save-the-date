@@ -26,7 +26,6 @@ import foto24 from "../../Images/24.jpg";
 import foto25 from "../../Images/25.jpg";
 import foto26 from "../../Images/26.jpg";
 import foto27 from "../../Images/27.jpg";
-
 import foto28 from "../../Images/28.jpg";
 import foto29 from "../../Images/29.jpg";
 import foto30 from "../../Images/30.jpg";
