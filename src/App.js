@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import { FaInstagram } from "react-icons/fa";
 import Deck from "./components/Slider/Deck";
+import {Slider} from "./components/Slider/Slider";
 import {Message} from "./components/Message/Message";
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <main className="Body">
-              <Deck></Deck>
+              <Slider/>
             </main>
           </Route>
           <Route exact path="/easterEgg">
