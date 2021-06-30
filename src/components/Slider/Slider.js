@@ -29,6 +29,7 @@ sliderFotos.map((el) => {
     animationDuration={1000}
     infinite
     touchTracking
+    disableDotsControls
     disableButtonsControls={false}
     mouseTracking
     items={itemArray}/> 

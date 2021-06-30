@@ -3,11 +3,9 @@ import { Link } from "react-router-dom";
 import Hands from "../../Images/hands.png";
 import "./LinkDrawer.css";
 
-export const LinkDrawer = ({ icon, label, link, onLinkClick}) => {
+export const LinkDrawer = ({ icon, label, link, onLinkClick }) => {
   let render = (
-    <div
-      className="div_link"
-    >
+    <div className="div_link">
       <Icon>{icon}</Icon>
       <h2 style={{ marginLeft: "10px" }}>{label}</h2>
     </div>
