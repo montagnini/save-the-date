@@ -33,3 +33,19 @@
     color: #b71c1c;
     transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
+
+  @media (max-width: 500px) {
+    .header_left {
+      position: absolute;
+      top:0;
+      left: 0;
+      margin: 10px;
+    }
+    .header_center{
+      position: absolute;
+      top:0;
+      right:0;
+      margin: 10px;
+      margin-top: 20px;
+    }
+  }

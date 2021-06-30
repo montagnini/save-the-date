@@ -7,12 +7,6 @@ export const LinkDrawer = ({ icon, label, link, onLinkClick}) => {
   let render = (
     <div
       className="div_link"
-      style={{
-        display: "flex",
-        marginTop: "28%",
-        width: "13vw",
-        marginLeft: "10px",
-      }}
     >
       <Icon>{icon}</Icon>
       <h2 style={{ marginLeft: "10px" }}>{label}</h2>
