@@ -1,0 +1,21 @@
+.div_img {
+    max-width: 115px;
+    width: 115px;
+    margin: 15px;
+  }
+  
+  .div_img img {
+    width: 100%;
+    height: auto;
+    margin-top: 130%;
+  }
+
+  .div_link:hover{
+    color: #b71c1c;
+    transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+
+  .link_disabled:hover{
+      cursor:not-allowed;
+      text-decoration:dotted;
+  }
