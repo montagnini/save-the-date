@@ -1,11 +1,10 @@
   
-import React from "react";
+import React, {useEffect, useState} from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import {sliderFotos} from "../SliderData/SliderData";
 import styled from 'styled-components';
-
+import firebase from "firebase";
 
 const Img = styled.img `
   max-height: 60vh;
@@ -15,12 +14,28 @@ const Img = styled.img `
   }
 `
 
-export const Slider = () => {
-  let itemArray = [];
-sliderFotos.map((el) => {
-  itemArray.push(<Img src={el} alt='fotoaqui'/>)
+export const Slider = ({folder}) => {
   
-})
+const [listSrc, setListSrc] = useState([]);
+
+let itemArray = [];
+
+async function  loadData(){
+   await firebase.storage().ref(folder).listAll().then(function(ref){
+    ref.items.forEach(function(item){
+      item.getDownloadURL().then(function(url) {
+        itemArray.push(<Img src={url}/>)
+        setListSrc(itemArray)
+      })
+   })
+
+ })
+}
+
+  useEffect(
+    () => loadData()
+  ,[])
+
   return (
     <AliceCarousel 
     autoPlay
@@ -32,6 +47,6 @@ sliderFotos.map((el) => {
     disableDotsControls
     disableButtonsControls={false}
     mouseTracking
-    items={itemArray}/> 
+    items={listSrc}/> 
   );
 };

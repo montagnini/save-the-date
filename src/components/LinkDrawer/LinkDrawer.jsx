@@ -13,14 +13,12 @@ export const LinkDrawer = ({ icon, label, link, onLinkClick }) => {
 
   if (label === "EasterEgg") {
     render = (
-      <div className="div_img">
         <img src={Hands} alt="img" />
-      </div>
     );
   }
 
   return (
-    <div>
+    <div className={label === "EasterEgg" && "div_img"}>
       <Link
         to={link}
         style={{ color: "black" }}

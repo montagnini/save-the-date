@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Slider } from "./components/Slider/Slider";
 import { Message } from "./components/Message/Message";
@@ -11,6 +12,7 @@ import "./App.css";
 
 
 function App() {
+
   return (
     <div>
       <Router>
@@ -18,7 +20,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <main className="Body" style={{ overflowY: "hidden" }}>
-              <Slider />
+              <Slider folder='/Foto-Home' />
             </main>
           </Route>
           <Route exact path="/easterEgg">

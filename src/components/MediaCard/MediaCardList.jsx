@@ -3,6 +3,7 @@ import React from 'react';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+import {sliderFotos} from "../SliderData/SliderData";
 
 import { MediaCardUnit } from "./MediaCardUnit";
 import "./MediaCard.css";
@@ -10,20 +11,24 @@ import "./MediaCard.css";
 export const MediaCardList = ({ list }) => {
 
   const [open, setOpen] = React.useState(false);
+  const [selectedImg, setSelectedImg] = React.useState('');
 
-  const handleOpen = () => {
+  const handleOpen = (img) => {
     setOpen(true);
+    setSelectedImg(img);
   };
 
   const handleClose = () => {
     setOpen(false);
   };
 
+  
+
   return (
     <div>
        <div class='media-card-list'>
       {list.map((el) => (
-        <MediaCardUnit img={el.img} label={el.label} onClick={handleOpen} />
+        <MediaCardUnit img={sliderFotos[10]} label={el.label} onClick={() => handleOpen(sliderFotos[10])} />
       ))}
     </div>
       <Modal
@@ -40,8 +45,8 @@ export const MediaCardList = ({ list }) => {
       >
         <Fade in={open}>
           <div className={'paper'}>
-            <h2 id="transition-modal-title">Transition modal</h2>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
+           
+           <img src={selectedImg} alt='azar'/>
           </div>
         </Fade>
       </Modal>
