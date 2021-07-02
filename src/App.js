@@ -22,26 +22,34 @@ function App() {
               <Slider folder="/Foto-Home" />
             </main>
           </Route>
+          <Route exact path="/pre-wedding">
+          <h1>Página em desenvolvimento :), be calm!</h1>
+          </Route>
           <Route exact path="/dress-code">
+            <h1>Página em desenvolvimento :), be calm!</h1>
             <MenWomen />
           </Route>
           <Route exact path="/easterEgg">
             <EasterEgg />
           </Route>
-          <Router exact path="/messages">
+          <Router exact path="/message">
+          <h1>Página em desenvolvimento :), be calm!</h1>
             <Message />
           </Router>
           <Router exact path="/gifts">
+          <h1>Página em desenvolvimento :), be calm!</h1>
             <div className="Body">
               <MediaCardGifts />
             </div>
           </Router>
           <Router exact path="/dress-code/women">
+          <h1>Página em desenvolvimento :), be calm!</h1>
             <div className="Body">
               <MediaCardDress type="women" />
             </div>
           </Router>
           <Router exact path="/dress-code/men">
+          <h1>Página em desenvolvimento :), be calm!</h1>
             <div className="Body">
               <MediaCardDress className="Body" type="men" />
             </div>
