@@ -1,8 +1,7 @@
 .card{
     max-width: 345px;
     min-width: 320px;
-    margin: 15px;
-
+    margin: 0px;
 }
 
 .card_media{

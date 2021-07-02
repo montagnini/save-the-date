@@ -4,6 +4,7 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import {sliderFotos} from "../SliderData/SliderData";
+import styled from 'styled-components';
 
 import { MediaCardUnit } from "./MediaCardUnit";
 import "./MediaCard.css";
@@ -22,8 +23,13 @@ export const MediaCardList = ({ list }) => {
     setOpen(false);
   };
 
-  
+  const Img = styled.img `
+  max-height: 60vh;
 
+  @media(max-width: 600px) {
+    max-width: 100vw;
+  }
+`
   return (
     <div>
        <div class='media-card-list'>
@@ -46,7 +52,7 @@ export const MediaCardList = ({ list }) => {
         <Fade in={open}>
           <div className={'paper'}>
            
-           <img src={selectedImg} alt='azar'/>
+           <Img src={selectedImg} alt='azar'/>
           </div>
         </Fade>
       </Modal>

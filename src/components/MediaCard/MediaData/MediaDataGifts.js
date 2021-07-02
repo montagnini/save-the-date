@@ -7,4 +7,20 @@ export const MediaDataGifts = [{
 }, {
     img:{foto2},
     label:'teste2'
+}
+, {
+    img:{foto2},
+    label:'teste2'
+}, {
+    img:{foto2},
+    label:'teste2'
+}, {
+    img:{foto2},
+    label:'teste2'
+}, {
+    img:{foto2},
+    label:'teste2'
+}, {
+    img:{foto2},
+    label:'teste2'
 }];

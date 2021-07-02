@@ -8,7 +8,7 @@ import "./MediaCard.css";
 
 export const MediaCardUnit = ({ img, label, onClick }) => {
   return (
-    <Card className="card"> 
+    <Card className="card" style={{margin:'1%'}}> 
       <CardActionArea onClick={() => onClick()}>
         <CardMedia className="card_media" image={img} />
         <CardContent>
