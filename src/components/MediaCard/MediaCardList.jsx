@@ -1,46 +1,49 @@
-
-import React from 'react';
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
-import {sliderFotos} from "../SliderData/SliderData";
-import styled from 'styled-components';
+import React from "react";
+import Modal from "@material-ui/core/Modal";
+import Backdrop from "@material-ui/core/Backdrop";
+import Fade from "@material-ui/core/Fade";
+import { sliderFotos } from "../SliderData/SliderData";
+import styled from "styled-components";
 
 import { MediaCardUnit } from "./MediaCardUnit";
 import "./MediaCard.css";
 
 export const MediaCardList = ({ list }) => {
-
   const [open, setOpen] = React.useState(false);
-  const [selectedImg, setSelectedImg] = React.useState('');
+  const [selected, setSelected] = React.useState("");
 
-  const handleOpen = (img) => {
+  const handleOpen = (img, label) => {
     setOpen(true);
-    setSelectedImg(img);
+    setSelected({ img: img, label: label });
   };
 
   const handleClose = () => {
     setOpen(false);
   };
 
-  const Img = styled.img `
-  max-height: 60vh;
+  const Img = styled.img`
+    max-height: 60vh;
 
-  @media(max-width: 600px) {
-    max-width: 100vw;
-  }
-`
+    @media (max-width: 600px) {
+      max-width: 100vw;
+    }
+  `;
   return (
     <div>
-       <div class='media-card-list'>
-      {list.map((el) => (
-        <MediaCardUnit img={sliderFotos[10]} label={el.label} onClick={() => handleOpen(sliderFotos[10])} />
-      ))}
-    </div>
+      <div class="media-card-list">
+        {list.map((el) => (
+          <MediaCardUnit
+            img={el.img}
+            label={el.label}
+            onClick={() => handleOpen(el.img, el.label)}
+          />
+        ))}
+      </div>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
-        className={'modal'}
+        className={"modal"}
+        style={{background:'black'}}
         open={open}
         onClose={handleClose}
         closeAfterTransition
@@ -50,14 +53,12 @@ export const MediaCardList = ({ list }) => {
         }}
       >
         <Fade in={open}>
-          <div className={'paper'}>
-           
-           <Img src={selectedImg} alt='azar'/>
+          <div className={"paper"}>
+            <Img src={selected.img} alt="azar" />
+            <h2 style={{color: 'white'}}>{selected.label}</h2>
           </div>
         </Fade>
       </Modal>
     </div>
   );
-
 };
-

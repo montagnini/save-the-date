@@ -37,9 +37,9 @@ function App() {
             <Message />
           </Router>
           <Router exact path="/gifts">
-          <h1>Página em desenvolvimento :), be calm!</h1>
+          <h1>Presentinhos!!!!</h1>
             <div className="Body">
-              <MediaCardGifts />
+              <MediaCardGifts fundo='black' />
             </div>
           </Router>
           <Router exact path="/dress-code/women">
@@ -51,7 +51,7 @@ function App() {
           <Router exact path="/dress-code/men">
           <h1>Página em desenvolvimento :), be calm!</h1>
             <div className="Body">
-              <MediaCardDress className="Body" type="men" />
+              <MediaCardDress type="men" />
             </div>
           </Router>
         </Switch>

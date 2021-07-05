@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const MediaCardDress = ({ type }) => {
   let list = MediaDataMulheres;
-  if (type === "men") {
+  if (type === 'men') {
     list = MediaDataHomens;
   }
   return <MediaCardList list={list}/>;

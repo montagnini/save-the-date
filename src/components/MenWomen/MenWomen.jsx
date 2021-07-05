@@ -9,18 +9,18 @@ export const MenWomen = (props) => {
     <div className='card'>
       <Link to={"/dress-code/women"} style={{ color: "black" }}>
         <div className='children' style={{marginRight:'10px' }}>
-          <Icon style={{ fontSize: "7vw", marginBottom: "15%" }}>
+          <Icon className='icon'>
             {"emoji_nature"}
           </Icon>
-          <h2 style={{ fontSize: "3vw" }}>{"Mulheres"}</h2>
+          <h2 className='label'> {"Mulheres"}</h2>
         </div>
       </Link>
       <Link to={"/dress-code/men"} style={{ color: "black" }}>
         <div className='children' style={{marginLeft:'10px' }}>
-          <Icon style={{ fontSize: "7vw", marginBottom: "15%" }}>
+          <Icon className='icon' >
             {"masks"}
           </Icon>
-          <h2 style={{ fontSize: "3vw" }}>{"Homens"}</h2>
+          <h2 className='label'>{"Homens"}</h2>
         </div>
       </Link>
     </div>

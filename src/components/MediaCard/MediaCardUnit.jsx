@@ -10,12 +10,7 @@ export const MediaCardUnit = ({ img, label, onClick }) => {
   return (
     <Card className="card" style={{margin:'1%'}}> 
       <CardActionArea onClick={() => onClick()}>
-        <CardMedia className="card_media" image={img} />
-        <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {label}
-          </Typography>
-        </CardContent>
+        <CardMedia className="card_media" image={img} />       
       </CardActionArea>
     </Card>
   );
