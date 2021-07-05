@@ -23,33 +23,47 @@ function App() {
             </main>
           </Route>
           <Route exact path="/pre-wedding">
-          <h1>Página em desenvolvimento :), be calm!</h1>
+            <h1>
+              Fotos tiradas e sendo trabalhadas pelo
+              <a
+                href="https://www.instagram.com/renato.bckr"
+                alt="n"
+                rel="noreferrer"
+                target="_blank"
+                className='anchor'
+              >
+                <h2>Renato Becker</h2>
+              </a>
+            </h1>
           </Route>
           <Route exact path="/dress-code">
-            <h1>Página em desenvolvimento :), be calm!</h1>
-            <MenWomen />
+            <div className="Body">
+              <h1>
+                Sem ideias dos trajes? Aqui você encontrará algumas dicas.
+              </h1>
+              <MenWomen />
+            </div>
           </Route>
           <Route exact path="/easterEgg">
             <EasterEgg />
           </Route>
           <Router exact path="/message">
-          <h1>Página em desenvolvimento :), be calm!</h1>
-            <Message />
+            <div className="Body">
+              <Message />
+            </div>
           </Router>
           <Router exact path="/gifts">
-          <h1>Presentinhos!!!!</h1>
             <div className="Body">
-              <MediaCardGifts fundo='black' />
+            <h1 style={{marginTop: '1%'}}>Presentinhos!!!!</h1>
+              <MediaCardGifts fundo="black" />
             </div>
           </Router>
           <Router exact path="/dress-code/women">
-          <h1>Página em desenvolvimento :), be calm!</h1>
             <div className="Body">
               <MediaCardDress type="women" />
             </div>
           </Router>
           <Router exact path="/dress-code/men">
-          <h1>Página em desenvolvimento :), be calm!</h1>
             <div className="Body">
               <MediaCardDress type="men" />
             </div>

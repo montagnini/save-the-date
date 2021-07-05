@@ -4,8 +4,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 50vh;
-  width: 50vw;
+}
+.input_text{
+  font-family: 'Roboto', sans-serif;
+  width: 25vw;
 }
 
 .text_area{
@@ -13,6 +15,12 @@
   height: 35vh;
   width: 50vw;
   font-size: 3vh;
+}
+
+.div_message{
+  display: flex;
+  flex-direction: column;
+align-items: center;
 }
 
 .button_form{
@@ -46,4 +54,28 @@
   cursor: pointer;
   background: #b71c1c;
   transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+@media(max-width: 550px){
+  .div_message{
+    overflow-y: auto;
+  }
+  .button_form{
+    width: 35vw;
+  }
+  .text_area{
+    height: 45vh;
+    width: 65vw;
+    font-size: 3vh;
+  }
+
+  .input_text{
+    width: 60vw;
+  }
+}
+
+@media(max-width: 325px){
+  .text_area{
+    height: 35vh;
+  }
 }

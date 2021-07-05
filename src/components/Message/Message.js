@@ -6,8 +6,9 @@ import axios from "axios";
 import "./Message.css";
 
 export function Message() {
-  const [value, setValue] = useState("");
+  const [text, setText] = useState("");
   const [loadingState, setLoadingState] = useState(false);
+  const [name, setName] = useState('');
   const [open, setOpen] = useState(false);
 
   function Alert(props) {
@@ -23,23 +24,27 @@ export function Message() {
   };
 
   const changeTextHandler = (event) => {
-    setValue(event.target.value);
+    setText(event.target.value);
+  };
+
+  const changeNameHandler = (event) => {
+    setName(event.target.value);
   };
 
   const sendMessageHandler = () => {
     //Define o estado 'carregando' como verdadeiro.
     setLoadingState(true);
-    console.log(value);
 
     axios
       .post(
         "https://save-the-date-51906-default-rtdb.firebaseio.com/messages.json",
-        { value: value }
+        {name: name, value: text }
       )
       .then((response) => {
         setLoadingState(false);
         setOpen(true);
-        setValue("");
+        setText("");
+        setName('');
       })
       .catch((error) => {
         console.log(error.value);
@@ -51,13 +56,20 @@ export function Message() {
       {loadingState ? (
         <Spinner />
       ) : (
-        <div>
+        <div className='div_message'>
+          <h2>Nome (opcional) </h2>
+          <input 
+          className='input_text'
+          type='text'
+          value={name}
+          onChange={changeNameHandler} 
+          placeholder='Seu nome aqui'/>
           <h2>Deixe-nos uma mensagem.</h2>
           <textarea
             className="text_area"
             type="text"
             placeholder=""
-            value={value}
+            value={text}
             onChange={changeTextHandler}
           />
           <button className="button_form" onClick={sendMessageHandler}>

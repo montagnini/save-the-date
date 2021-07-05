@@ -11,7 +11,7 @@ export const Footer = () => {
           <a
             href="https://www.instagram.com/naylapallu/"
             alt="n"
-            className="anchor"
+            className="anchor_insta"
             rel="noreferrer"
             target="_blank">
             <FaInstagram size={56}></FaInstagram>
@@ -22,7 +22,7 @@ export const Footer = () => {
           <a
             href="https://www.instagram.com/wmontagnin/"
             alt="n"
-            className="anchor"
+            className="anchor_insta"
             rel="noreferrer"
             target="_blank">
             <FaInstagram size={56}></FaInstagram>
