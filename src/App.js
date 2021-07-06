@@ -3,7 +3,7 @@ import { Slider } from "./components/Slider/Slider";
 import { Message } from "./components/Message/Message";
 import { EasterEgg } from "./components/EasterEgg";
 import { MediaCardGifts } from "./components/MediaCard/MediaCardGifts";
-
+import { FaInstagram } from "react-icons/fa";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { MenWomen } from "./components/MenWomen/MenWomen";
@@ -32,7 +32,11 @@ function App() {
                 target="_blank"
                 className='anchor'
               >
-                <h2>Renato Becker</h2>
+                <div className='insta'>
+
+                <FaInstagram style={{marginRight: '1%'}} size={56}></FaInstagram>
+                <h2 >Renato Becker</h2>
+                </div>
               </a>
             </h1>
           </Route>

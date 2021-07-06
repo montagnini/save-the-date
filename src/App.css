@@ -34,6 +34,15 @@ body {
   display: flex;
 }
 
+.insta {
+  color: #424242;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  text-decoration: underline;
+
+}
+.insta:hover,
 .anchor_insta:hover,
 .anchor:hover{
   cursor: pointer;
