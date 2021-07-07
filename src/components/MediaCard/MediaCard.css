@@ -56,3 +56,9 @@
     width: 40vw;
   }
 }
+
+@media(max-width: 450px){
+  .button_form{
+    width: 50vw;
+  }
+}
