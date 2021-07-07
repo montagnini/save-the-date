@@ -33,7 +33,6 @@ function App() {
                 className='anchor'
               >
                 <div className='insta'>
-
                 <FaInstagram style={{marginRight: '1%'}} size={56}></FaInstagram>
                 <h2 >Renato Becker</h2>
                 </div>
@@ -43,7 +42,7 @@ function App() {
           <Route exact path="/dress-code">
             <div className="Body">
               <h1>
-                Sem ideias dos trajes? Aqui você encontrará algumas dicas.
+                Sem ideia de trajes? Aqui damos algumas dicas.
               </h1>
               <MenWomen />
             </div>

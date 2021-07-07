@@ -5,7 +5,6 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import { sliderFotos } from "../SliderData/SliderData";
 
 import styled from "styled-components";
-import firebase from "firebase";
 
 const Img = styled.img`
   max-height: 60vh;
@@ -20,30 +19,6 @@ export const Slider = ({ folder }) => {
 
   let itemArray = [];
 
-  async function loadData2() {
-    const ref = await firebase.storage().ref(folder).listAll();
-
-    await ref.items.forEach(function (item) {
-      const url = item.getDownloadURL();
-      itemArray.push(<Img src={url} />);
-      setListSrc(itemArray);
-    });
-  }
-
-  async function loadData() {
-    await firebase
-      .storage()
-      .ref(folder)
-      .listAll()
-      .then(function (ref) {
-        ref.items.forEach(function (item) {
-          item.getDownloadURL().then(function (url) {
-            itemArray.push(<Img src={url} />);
-            setListSrc(itemArray);
-          });
-        });
-      });
-  }
   function updateData() {
     sliderFotos.map((el) => {
       itemArray.push(<Img src={el} />);

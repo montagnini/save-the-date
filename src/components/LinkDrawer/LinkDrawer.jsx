@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Hands from "../../Images/hands.png";
 import "./LinkDrawer.css";
 
-export const LinkDrawer = ({ key, icon, label, link, onLinkClick }) => {
+export const LinkDrawer = ({icon, label, link, onLinkClick }) => {
   let render = (
     <div className="div_link">
       <Icon>{icon}</Icon>
@@ -18,9 +18,9 @@ export const LinkDrawer = ({ key, icon, label, link, onLinkClick }) => {
   }
 
   return (
-    <div className={label === "EasterEgg" && "div_img"}>
+    <div className={label === "EasterEgg" ? "div_img": undefined }>
       <Link
-        key={key}
+        key={link}
         to={link}
         style={{ color: "black" }}
         onClick={() => onLinkClick(false)}

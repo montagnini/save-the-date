@@ -6,9 +6,7 @@ import foto5 from "../../Images/5.jpg";
 import foto6 from "../../Images/6.jpg";
 import foto7 from "../../Images/7.jpg";
 import foto8 from "../../Images/8.jpg";
-import foto9 from "../../Images/9.jpg";
 import foto10 from "../../Images/10.jpg";
-import foto11 from "../../Images/11.jpg";
 import foto12 from "../../Images/12.jpg";
 import foto13 from "../../Images/13.jpg";
 import foto14 from "../../Images/14.jpg";
@@ -38,6 +36,13 @@ import foto38 from "../../Images/38.jpg";
 import foto39 from "../../Images/39.jpg";
 import foto40 from "../../Images/40.jpg";
 import foto41 from "../../Images/41.jpg";
+import foto42 from "../../Images/42.jpg";
+import foto43 from "../../Images/43.jpg";
+import foto44 from "../../Images/44.jpg";
+import foto45 from "../../Images/45.jpg";
+import foto46 from "../../Images/46.jpg";
+import foto47 from "../../Images/47.jpg";
+import foto48 from "../../Images/48.jpg";
 
 export const sliderFotos = [
   foto1,
@@ -48,9 +53,7 @@ export const sliderFotos = [
   foto6,
   foto7,
   foto8,
-  foto9,
   foto10,
-  foto11,
   foto12,
   foto13,
   foto14,
@@ -80,4 +83,11 @@ export const sliderFotos = [
   foto39,
   foto40,
   foto41,
+  foto42,
+  foto43,
+  foto44,
+  foto45,
+  foto46,
+  foto47,
+  foto48,
 ];

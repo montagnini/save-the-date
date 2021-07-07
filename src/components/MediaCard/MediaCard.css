@@ -1,25 +1,58 @@
-.card{
-    max-width: 345px;
-    min-width: 320px;
-    margin: 0px;
+.card {
+  max-width: 345px;
+  min-width: 320px;
+  margin: 0px;
 }
 
-.card_media{
-    height: 300px;
+.card_media {
+  height: 300px;
 }
 
-.media-card-list{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center;
+.media-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.modal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.paper{
-    border: 2px solid #000;
+.paper {
+  border: 2px solid #000;
+}
+
+.button_form {
+  background: none repeat scroll 0 0 transparent;
+  border: solid black 1px;
+  border-radius: 25;
+  border-spacing: 2;
+  font-family: "Dancing Script", cursive;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42rem;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+
+  font-size: 4vh;
+
+  height: 6vh;
+  width: 12vw;
+  text-align: center;
+  margin-top: 5%;
+
+  background: #424242;
+  color: white;
+}
+
+@media (max-width: 1025px) {
+  .button_form {
+    width: 40vw;
+  }
 }

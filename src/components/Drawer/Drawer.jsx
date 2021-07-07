@@ -5,9 +5,9 @@ import './Drawer.css';
 export const DrawerXablau = ({ open, handleClose, drawer, onLinkClick }) => {
   return (
     <Drawer className="teste"open={open} onClose={handleClose}>
-      {drawer.map((el) => (
+      {drawer.map((el, index) => (
         <LinkDrawer 
-        key={el.label}
+        key={index}
         link={el.link}
         label={el.label}
         icon={el.icon}

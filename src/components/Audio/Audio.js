@@ -13,7 +13,7 @@ function Audio() {
 
   useEffect(() => {
     setPlaying(true);
-  }, []);
+  }, [setPlaying]);
 
   return (
     <div className="player">
