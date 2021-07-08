@@ -93,7 +93,7 @@ export const MediaCardList = ({ list }) => {
       >
         <Fade in={openSecondModal}>
           <div className={"paper"}>
-            <h2 style={{ color: "white" }}>PIX: XABLAU</h2>
+            <h2 style={{ color: "white" }}>PIX: 41 99661-2282</h2>
           </div>
         </Fade>
       </Modal>

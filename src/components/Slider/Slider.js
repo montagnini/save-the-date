@@ -26,24 +26,22 @@ export const Slider = ({ folder }) => {
     setListSrc(itemArray);
   }
 
-  useEffect(
-    () => updateData(),
-    //() => loadData2()
-    []
-  );
+  useEffect(() => updateData(), []);
 
   return (
-    <AliceCarousel
-      autoPlay
-      autoPlayStrategy="none"
-      autoPlayInterval={4000}
-      animationDuration={1000}
-      infinite
-      touchTracking
-      disableDotsControls
-      disableButtonsControls={false}
-      mouseTracking
-      items={listSrc}
-    />
+    (
+      <AliceCarousel
+        autoPlay
+        autoPlayStrategy="default"
+        autoPlayInterval={4000}
+        animationDuration={1000}
+        infinite
+        touchTracking
+        keyboardNavigation
+        animationType="fadeout"
+        mouseTracking
+        items={listSrc}
+      />
+    )
   );
 };

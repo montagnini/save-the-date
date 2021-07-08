@@ -19,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <main className="Body" style={{ overflowY: "hidden" }}>
+              
               <Slider folder="/Foto-Home" />
             </main>
           </Route>
