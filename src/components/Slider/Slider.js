@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import { sliderFotos } from "../SliderData/SliderData";
-
 import styled from "styled-components";
 
 const Img = styled.img`
@@ -14,13 +12,13 @@ const Img = styled.img`
   }
 `;
 
-export const Slider = ({ folder }) => {
+const Slider = ({ list }) => {
   const [listSrc, setListSrc] = useState([]);
 
   let itemArray = [];
 
   function updateData() {
-    sliderFotos.map((el) => {
+    list.map((el) => {
       itemArray.push(<Img src={el} />);
     });
     setListSrc(itemArray);
@@ -45,3 +43,5 @@ export const Slider = ({ folder }) => {
     )
   );
 };
+
+export default Slider;

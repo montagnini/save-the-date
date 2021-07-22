@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Slider } from "./components/Slider/Slider";
+import { SliderHome } from "./components/Slider/SliderHome";
+import { SliderPreWedding } from "./components/Slider/SliderPreWedding";
 import { Message } from "./components/Message/Message";
 import { EasterEgg } from "./components/EasterEgg";
 import { MediaCardGifts } from "./components/MediaCard/MediaCardGifts";
@@ -19,32 +20,34 @@ function App() {
         <Switch>
           <Route exact path="/">
             <main className="Body" style={{ overflowY: "hidden" }}>
-              
-              <Slider folder="/Foto-Home" />
+              <SliderHome />
             </main>
           </Route>
           <Route exact path="/pre-wedding">
-            <h1>
-              Fotos tiradas e sendo trabalhadas pelo
+            <main className="Body" style={{ overflowY: "hidden" }}>
+              <SliderPreWedding/>
+            </main>
+            <h2>
               <a
                 href="https://www.instagram.com/renato.bckr"
                 alt="n"
                 rel="noreferrer"
                 target="_blank"
-                className='anchor'
+                className="anchor"
               >
-                <div className='insta'>
-                <FaInstagram style={{marginRight: '1%'}} size={56}></FaInstagram>
-                <h2 >Renato Becker</h2>
+                <div className="insta">
+                  <FaInstagram
+                    style={{ marginRight: "1%" }}
+                    size={56}
+                  ></FaInstagram>
+                  <h2>Renato Becker</h2>
                 </div>
               </a>
-            </h1>
+            </h2>
           </Route>
           <Route exact path="/dress-code">
             <div className="Body">
-              <h1>
-                Sem ideia de trajes? Aqui damos algumas dicas.
-              </h1>
+              <h1>Sem ideia de trajes? Aqui damos algumas dicas.</h1>
               <MenWomen />
             </div>
           </Route>
@@ -58,7 +61,7 @@ function App() {
           </Router>
           <Router exact path="/gifts">
             <div className="Body">
-            <h1 style={{marginTop: '1%'}}>Presentinhos!!!!</h1>
+              <h1 style={{ marginTop: "1%" }}>Presentinhos!!!!</h1>
               <MediaCardGifts fundo="black" />
             </div>
           </Router>
