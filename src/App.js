@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { SliderHome } from "./components/Slider/SliderHome";
+import { SliderWedding } from "./components/Slider/SliderWedding";
+import { SliderRegular } from "./components/Slider/SliderRegular";
 import { SliderPreWedding } from "./components/Slider/SliderPreWedding";
 import { Message } from "./components/Message/Message";
 import { EasterEgg } from "./components/EasterEgg";
@@ -20,12 +21,34 @@ function App() {
         <Switch>
           <Route exact path="/">
             <main className="Body" style={{ overflowY: "hidden" }}>
-              <SliderHome />
+              <SliderWedding  />
+            </main>
+            <h2>
+              <a
+                href="https://www.instagram.com/renato.bckr"
+                alt="n"
+                rel="noreferrer"
+                target="_blank"
+                className="anchor"
+              >
+                <div className="insta">
+                  <FaInstagram
+                    style={{ marginRight: "1%" }}
+                    size={56}
+                  ></FaInstagram>
+                  <h2>Renato Becker</h2>
+                </div>
+              </a>
+            </h2>
+          </Route>
+          <Route exact path="/regular-photos">
+            <main className="Body" style={{ overflowY: "hidden" }}>
+              <SliderRegular />
             </main>
           </Route>
           <Route exact path="/pre-wedding">
             <main className="Body" style={{ overflowY: "hidden" }}>
-              <SliderPreWedding/>
+              <SliderPreWedding />
             </main>
             <h2>
               <a

@@ -13,6 +13,11 @@ export const Header = () => {
       link: "/",
       label: "Home",
       icon: "home",
+    }, 
+    {
+      link: "/regular-photos",
+      label: "Fotos do Casal",
+      icon: "photo_camera",
     },
     {
       link: "/pre-wedding",
@@ -56,7 +61,7 @@ export const Header = () => {
         </IconButton>
       </div>
       <div className="header_center">
-        <h2>Save the date!</h2>
+        <h2>Together since </h2>
         <Countdown date="August 28, 2021 16:00:00 GMT+03:00" />
       </div>
     </header>

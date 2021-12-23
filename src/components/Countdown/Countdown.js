@@ -33,7 +33,7 @@ class Countdown extends Component {
   }
 
   calculateCountdown(endDate) {
-    let diff = (Date.parse(new Date(endDate)) - Date.parse(new Date())) / 1000;
+    let diff = (Date.parse(new Date()) - Date.parse(new Date(endDate))) / 1000;
 
     // clear countdown when date is reached
     if (diff <= 0) return false;
